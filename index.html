@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedVed</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div>
+    <h1>Запись к врачу</h1>
+    <form>
+        <div>
+            <label>ФИО</label>
+            <input type="text" id="fullName" name="fullName" required
+                   pattern="[А-Яа-яЁё\s]+" title="Только кириллица и пробелы">
+            <span id="fullNameError"></span>
+        </div>
+        <div>
+            <label>Дата рождения</label>
+            <input type="date" id="birthDate" name="birthDate" required
+                   max="2006-12-31">
+            <span id="birthDateError"></span>
+        </div>
+        <div>
+            <label>Номер телефона</label>
+            <input type="tel" id="phoneNumber" name="phone" required
+                   pattern="\d{11}" title="11 цифр без пробелов и других символов"
+            <span id="phoneError"></span>
+        </div>
+        <div>
+            <label>Дата приёма</label>
+            <input type="date" id="appointmentDate" name="appointmentDate" required>
+            <span id="appointmentDateError"></span>
+        </div>
+        <div>
+            <label>Время приёма</label>
+            <input type="time" id="appointmentTime" name="appointmentTime" required
+                   min="08:00" max="22:00">
+            <span id="appointmentTimeError"></span>
+        </div>
+
+        <button type="submit" >Отправить заявку</button>
+    </form>
+</div>
+    <footer>
+        <div class="footer">
+            <p>2025 МедВед. Все права защищны</p>
+            <p>Контактный номер: +7 (123) 456 78-90</p>
+            <p>Email: info@medved.ru</p>
+       </div>
+</footer>
+<script src="script.js"></script>
+</body>
+
+</body>
+</html>
