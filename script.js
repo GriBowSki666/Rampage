@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-    document.getElementByld('appointmentForm').addEventListener('submit', e => {
+    document.getElementById('appointmentForm').addEventListener('submit', e => {
         e.preventDefault();
-        alert('Ваша заявка успешно отправленна');
+        alert('Ваша заявка успешно отправлена');
     });
 });
